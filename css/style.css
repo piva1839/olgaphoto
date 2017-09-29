@@ -9,6 +9,11 @@ font-family: "aMavickFont", sans-serif;
  
 */
 
+@font-face {
+	font-family: "BebasNeueRegular";
+	src: url("../fonts/BebasNeueRegular.otf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
 	border: 0px solid black;
@@ -31,7 +36,7 @@ img {
 
 .container {
 	width: 100%;
-	max-width: 1600px;
+	max-width: 1150px;
 
 	margin: 0 auto;
 	padding: 0 15px;
@@ -41,17 +46,194 @@ img {
 
 .header {
 	height: 100vh;
+  
+  padding-top: 1px;
 	
 	background: url("../img/headbg.jpg") no-repeat;
 	background-size: cover;
   background-position: center;
 }
 
+.header-inner {
+  max-width: 1150px;
+  margin: 10% auto 16%;
+}
+
+h1 { 
+  font-family: "BebasNeueRegular", sans-serif;
+  font-size: 90px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "BebasNeueRegular", sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 /* menu */
+
+.menu {
+  min-height: 100px;
+  
+	background: #252222;
+}
+
+.menu .container {
+  padding: 19px 0;
+}
+
+h3 {
+  float: left;
+  
+  margin-left: 15px;
+  margin-right: 35px;
+  
+  font-family: "BebasNeueRegular", sans-serif;
+  font-size: 48px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.menu-inner {
+  float: right;
+  
+  margin-right: 15px;
+}
+
+.main-menu {
+  float: left;
+  
+  margin-right: 30px;
+  
+  font-family: "BebasNeueRegular", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  
+  list-style-type: none;
+}
+
+.main-menu li {
+  display: inline-block;
+  
+  margin-right: 20px;
+  padding: 15px 0px 15px 0px;
+}
+
+.main-menu a {
+  padding: 15px 5px 15px 5px;
+  
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.main-menu a:hover {
+  border-bottom: 2px solid #65ba99;
+  
+  color: #65ba99;
+  text-decoration: none;
+}
+
+.main-menu a.active {
+  border-bottom: 2px solid #65ba99;
+  
+  color: #65ba99;
+}
+
+.socials {
+  float: right;
+  
+  list-style-type: none;
+}
+
+.socials li {
+  display: inline-block;
+  
+  margin-left: 5px;
+  padding: 12px 0 0 0;
+  
+  vertical-align: middle;
+}
+
+.socials a {
+  display: block;
+  width: 38px;
+  height: 38px;
+  
+  font-size: 0px;
+  
+  list-style-type: none;
+}
+
+.socials .fb {
+  background: url("../img/socials.png") no-repeat;
+  background-position: -6px -5px;
+}
+
+.socials .vk {
+  background: url("../img/socials.png") no-repeat;
+  background-position: -94px -5px;
+}
+
+.socials .in {
+  background: url("../img/socials.png") no-repeat;
+  background-position: -6px -137px;
+}
+
 /* portfolio */
+
+.portfolio {
+  min-height: 1840px;
+  
+	background: #65ba99;
+}
+
 /* promo */
+
+.promo {
+  min-height: 300px;
+  
+	background: url("../img/promobg.jpg") no-repeat;
+	background-size: cover;
+  background-position: center;
+}
+
 /* projects */
+
+.projects {
+  min-height: 680px;
+  
+	background: #cdcdcd;
+}
+
 /* partners */
+
+.partners {
+  min-height: 200px;
+  
+	background: #bebebe;
+}
+
 /* bio */
+
+.bio {
+  min-height: 600px;
+  
+	background: #e2534b;
+}
+
 /* contacts */
+
+.contacts {
+  min-height: 530px;
+  
+	background: url("../img/contactbg.jpg") no-repeat;
+	background-size: cover;
+  background-position: center;
+}
+
 /* footer */
