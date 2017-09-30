@@ -36,7 +36,7 @@ img {
 
 .container {
 	width: 100%;
-	max-width: 1150px;
+	max-width: 970px;
 
 	margin: 0 auto;
 	padding: 0 15px;
@@ -136,6 +136,8 @@ h3 {
   
   color: #65ba99;
   text-decoration: none;
+	
+	transition: 0.4s;
 }
 
 .main-menu a.active {
@@ -184,12 +186,79 @@ h3 {
   background-position: -6px -137px;
 }
 
+.socials a {
+  display: block;
+  width: 38px;
+  height: 38px;
+  
+  font-size: 0px;
+  
+  list-style-type: none;
+}
+
+/*
+
+.socials .fb:hover {
+  background: url("../img/socials_hr.png") no-repeat;
+  background-position: -6px -5px;
+}
+
+.socials .vk:hover {
+  background: url("../img/socials_hr.png") no-repeat;
+  background-position: -94px -5px;
+}
+
+.socials .in:hover {
+  background: url("../img/socials_hr.png") no-repeat;
+  background-position: -6px -137px;
+}
+
+*/
+
+.socials .fb:hover,
+.socials .vk:hover,
+.socials .in:hover {
+  opacity: 0.8;
+	transition: 0.2s;
+}
+
 /* portfolio */
 
 .portfolio {
   min-height: 1840px;
+	padding-top: 1px;
   
 	background: #65ba99;
+}
+
+h4 {
+	margin: 45px 0;
+	
+	font-family: "BebasNeueRegular", sans-serif;
+  font-size: 48px;
+  color: #ffffff;
+	text-align: center;
+  text-transform: uppercase;
+}
+
+.my-photos-style {	
+	display: block;
+
+	font-family: "BebasNeueRegular", sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.gallery img {
+	margin-right: -5px;
+}
+
+.gallery img:hover {
+	cursor: pointer;
+	opacity: 0.8;
+	transform: scale(1.1);
+	transition: 0.5s;
 }
 
 /* promo */
