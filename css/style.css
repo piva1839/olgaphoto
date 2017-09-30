@@ -57,6 +57,7 @@ img {
 .header-inner {
   max-width: 1150px;
   margin: 10% auto 16%;
+  padding-bottom: 1px;
 }
 
 h1 { 
@@ -136,8 +137,8 @@ h3 {
   
   color: #65ba99;
   text-decoration: none;
-	
-	transition: 0.4s;
+  
+  transition: 0.4s;
 }
 
 .main-menu a.active {
@@ -196,29 +197,24 @@ h3 {
   list-style-type: none;
 }
 
-/*
-
 .socials .fb:hover {
-  background: url("../img/socials_hr.png") no-repeat;
+  background: url("../img/socials_h.png") no-repeat;
   background-position: -6px -5px;
+  
+	transition: 0.2s;
 }
 
 .socials .vk:hover {
-  background: url("../img/socials_hr.png") no-repeat;
+  background: url("../img/socials_h.png") no-repeat;
   background-position: -94px -5px;
+  
+	transition: 0.2s;
 }
 
 .socials .in:hover {
-  background: url("../img/socials_hr.png") no-repeat;
+  background: url("../img/socials_h.png") no-repeat;
   background-position: -6px -137px;
-}
-
-*/
-
-.socials .fb:hover,
-.socials .vk:hover,
-.socials .in:hover {
-  opacity: 0.8;
+  
 	transition: 0.2s;
 }
 
@@ -229,6 +225,10 @@ h3 {
 	padding-top: 1px;
   
 	background: #65ba99;
+}
+
+.gallery {
+	padding-bottom: 100px;
 }
 
 h4 {
@@ -252,23 +252,54 @@ h4 {
 
 .gallery img {
 	margin-right: -5px;
+  transition: all 0.5s;
 }
 
 .gallery img:hover {
 	cursor: pointer;
 	opacity: 0.8;
 	transform: scale(1.1);
-	transition: 0.5s;
 }
 
 /* promo */
 
 .promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
   min-height: 300px;
   
 	background: url("../img/promobg.jpg") no-repeat;
 	background-size: cover;
   background-position: center;
+}
+
+.promotext {
+  font-family: "BebasNeueRegular", sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.promotext::before {
+  color: #ffffff;
+  content: "\201C"; /* Непечатаемый символ слева */
+  font-size: 2.5em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
+}
+
+.promotext::after {
+  color: #ffffff;
+  content: "\201D"; /* Непечатаемый символ справа */
+  font-size: 2.5em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+  margin-left: 0.08em;
 }
 
 /* projects */
