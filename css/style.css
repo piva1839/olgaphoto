@@ -453,8 +453,67 @@ h4 {
 	background: #e2534b;
 }
 
+.bio ul {
+  list-style-type: none;
+}
+
 .bio h4 {
 	color: #252222;
+}
+
+.me-about {
+  float: left;
+  width: 50%;
+  
+  text-align: center;
+}
+
+.my-name {
+  margin-bottom: 20px;
+  
+  font-family: "BebasNeueRegular", sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.my-photo {
+  border-radius: 100%;
+}
+
+.bio-socials a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  
+  background: url("../img/social_icons.png") no-repeat;
+  
+  font-size: 0px;
+}
+
+.me-more {
+  padding: 0 15px 0 25px; 
+  
+  float: right;
+  width: 50%;
+}
+
+.my-principle {
+  margin-bottom: 10px;
+  
+  font-family: "BebasNeueRegular", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.my-career {
+  margin-bottom: 10px;
+  
+  font-family: "OpenSans-Regular", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+	text-decoration: none;
 }
 
 /* contacts */
