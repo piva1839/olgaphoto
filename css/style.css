@@ -349,6 +349,16 @@ h4 {
   text-transform: uppercase;
 }
 
+.slider {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
 .gallery ul {
 	text-align: center;
 	list-style-type: none;
