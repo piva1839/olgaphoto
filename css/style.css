@@ -234,16 +234,6 @@ h3 {
   list-style-type: none;
 }
 
-.socials-mob a {
-  display: inline-block;
-  width: 38px;
-  height: 38px;
-  
-  font-size: 0px;
-  
-  list-style-type: none;
-}
-
 .socials .fb:hover,
 .socials-mob .fb:hover {
   background: url("../img/socials_h.png") no-repeat;
@@ -305,12 +295,43 @@ h3 {
   display: none;
   width: 100%;
   height: 100%;
+	padding-top: 50px;
   
   background: #000000;
   
   text-align: center;
   
   opacity: 0.9;
+}
+
+.menu-mob .menu-item {
+	display: block;
+	padding: 20px;
+	
+	font-weight: 600;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	transition: 0.4s;
+}
+
+.menu-mob .menu-item:hover {
+	background: #65ba99;
+}
+
+.socials-mob {
+	padding-top: 10px;
+}
+
+.socials-mob a {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  
+  font-size: 0px;
+  
+  list-style-type: none;
 }
 
 @media screen and (max-width: 1024px) {
@@ -341,6 +362,20 @@ h3 {
 		float: none;
 		
 		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+	.menu-mob {
+		padding-top: 5px;
+	}
+	
+	.menu-mob .menu-item {
+		padding: 10px;
+	}
+	
+	.socials-mob {
+		padding-top: 0;
 	}
 }
 
